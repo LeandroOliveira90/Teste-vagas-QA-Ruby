@@ -16,3 +16,7 @@ Then("a saída esperada é {string}") do |saida|
   resultado = removeTextoSimbolos(@entrada, @marcadores)
   expect(resultado).to eq(saida)
 end
+
+# OBS: Os demais casos não estão teoricamente escritos, pois, com a refatoração existente
+# no arquivo backend2.feature os 3 cenários já serão validados. Refatoração para deixar o
+# código mais limpo.
